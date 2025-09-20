@@ -56,16 +56,21 @@ class SplashController extends GetxController {
       if (isLoggedIn) {
         _navigateToHome();
       } else {
-        _navigateToHome(); // For now, navigate to home. Later you can add authentication route
+        _navigateToLogin(); // Navigate to login if not logged in
       }
     } catch (e) {
-      _navigateToHome();
+      _navigateToLogin(); // Default to login on error
     }
   }
 
   /// Navigate to home screen
   void _navigateToHome() {
     Get.offAllNamed(RouteName.HOME);
+  }
+
+  /// Navigate to login screen
+  void _navigateToLogin() {
+    Get.offAllNamed(RouteName.LOGIN);
   }
 
   Future<bool> isLogin() async {
