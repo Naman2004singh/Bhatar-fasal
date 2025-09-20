@@ -93,9 +93,9 @@ class AppCommonSizes {
   static const double iconXL = 48.0;
 
   // Button Heights
-  static const double buttonHeightS = 36.0;
-  static const double buttonHeightM = 44.0;
-  static const double buttonHeightL = 52.0;
+  static const double buttonHeightS = 40.0;
+  static const double buttonHeightM = 48.0;
+  static const double buttonHeightL = 56.0;
 }
 
 /// Responsive breakpoints for different screen sizes
